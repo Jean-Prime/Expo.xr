@@ -15,6 +15,8 @@
 }
 
 body {
+  box-sizing: border-box;
+
   width: 100%;
   height: auto;
   background-color: var(--main-second-color);
@@ -24,7 +26,7 @@ body {
 
 
 
-PAGE       :      Acceuil         //////////////////////////////
+PAGE       :      Accueil         //////////////////////////////
 
 
 
@@ -42,8 +44,8 @@ header {
 }
 
 #Exposition {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .titre {
@@ -53,8 +55,8 @@ header {
 
 .menu1 ul,
 .ExpoContact li {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 8px 10px 0 10px;
   justify-content: center;
@@ -70,13 +72,14 @@ header {
   text-decoration: none;
   color: var(--main-first-color);
   transition: 0s;
+  padding: 10px;
 }
 
 .menu1 a:hover {
   color: var(--main-second-color);
 }
 
-.menuAcceuil,
+.menuAccueil,
 .menuService,
 .menuInscription,
 .menuStart,
@@ -101,11 +104,12 @@ header {
   color: var(--main-first-color);
 }
 
-.menuAcceuil {
+.PageAccueil .menuAccueil {
   border-top: 5px solid var(--main-first-color);
   padding-bottom: 4.4px;
 }
-.menuAcceuil,
+
+.menuAccueil,
 .menuService,
 .menuInscription,
 .menuStart {
@@ -114,9 +118,10 @@ header {
   color: var(--main-first-color);
 }
 
-.menuAcceuil:hover {
+.PageAccueil .menuAccueil:hover {
   background-color: var(--main-third-color);
 }
+
 .menuInscription:hover,
 .menuService:hover,
 .menuStart:hover {
@@ -311,11 +316,11 @@ PAGE       :       Service           //////////////////////////////
   border: 5px solid var(--main-first-color);
 }
 
-.PageService .menuAcceuil {
+.PageService .menuAccueil {
   border-top: none;
 }
 
-.PageService .menuAcceuil:hover {
+.PageService .menuAccueil:hover {
   border-top: 5px solid var(--main-first-color);
 }
 
@@ -334,14 +339,41 @@ PAGE       :       Service           //////////////////////////////
 
 
 
-Debut Design Responsive */
+
+
+
+
+
+
+
+
+
+
+Debut Design Responsive 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 @media all and (max-width: 1250px) {
   /*
 
 
 
-PAGE       :      Acceuil        //////////////////////////////
+PAGE       :      Accueil        //////////////////////////////
 
 
 
@@ -352,12 +384,6 @@ PAGE       :      Acceuil        //////////////////////////////
  
 
 Debut Design En-tête */
-
-  .menu1 ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 10px;
-  }
 
   /* Fin Design En-tête 
 
@@ -384,156 +410,12 @@ Debut Design Principal*/
 */
 }
 
-@media all and (max-width: 880px) {
+@media all and (max-width: 800px) {
   /*
 
 
 
-PAGE       :      Acceuil
-
-
-
-*/
-
-  /*
-
-
-
-Debut Design En-tête */
-
-  .menu1 ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
-  }
-  /* Fin Design En-tête 
-
-
-
-*/
-  /*
-
-
-
-
-Debut Design Principal*/
-
-  .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  /*Fin Design Principal
-
-
-
-
-*/
-}
-
-@media all and (max-width: 700px) {
-  /*
-
-
-
-PAGE       :      Acceuil
-
-
-
-*/
-
-  /*
-
- 
-
-Debut Design En-tête */
-
-  .barrePrincipal {
-    display: grid;
-    grid-template-columns: repeat(2, 425px);
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .btnSecond {
-    display: inline;
-  }
-  .menu1 {
-    display: none;
-  }
-  .menu1 ul {
-    display: none;
-
-    /* Fin Design En-tête 
-
-
-
-*/
-    /*
-
-
-
-
-Debut Design Principal*/
-  }
-  .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-  }
-
-  .images img {
-    width: 96%;
-    height: 180px;
-  }
-  /*Fin Design Principal
-
-
-
-
-*/
-
-  /*
-  
-  
-  
-  
-  PAGE          :          Contact
-
-
-
-
-*/
-
-  /*
-  
-  
-  
-  Debut Design En-tête*/
-
-  .ExpoContact {
-    display: grid;
-    grid-template-columns: 1fr 150px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .ExpoContact .btnContact {
-    padding-bottom: 10px;
-  }
-  /*Fin Design En-tête
-
-
-
-
-*/
-}
-
-@media all and (max-width: 560px) {
-  /*
-
-
-
-PAGE       :      Acceuil     //////////////////////////////
+PAGE       :      Accueil     //////////////////////////////
 
 
 
@@ -543,19 +425,26 @@ PAGE       :      Acceuil     //////////////////////////////
  
 
 Debut Design En-tête */
+
   .barrePrincipal {
-    display: grid;
-    grid-template-columns: repeat(2, 270px);
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10px 0 10px;
+    padding: 20px 5px 0 6px;
   }
-
-  .btnSecond {
-    display: inline;
-  }
+  
   .menu1 {
     display: none;
   }
+
+  #Exposition {
+    display: inline;
+  }
+  .btnSecond {
+    display: inline;
+  }
+
   .menu1 ul {
     display: none;
   }

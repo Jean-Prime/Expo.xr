@@ -49,8 +49,14 @@ header {
 }
 
 .titre {
+  display: flex;
   font-size: 30px;
   color: var(--main-first-color);
+  align-items: center;
+}
+
+.titre svg {
+  padding: 0 10px 0 10px;
 }
 
 .menu1 ul,
@@ -433,7 +439,7 @@ Debut Design En-tête */
     margin: 0 10px 0 10px;
     padding: 20px 5px 0 6px;
   }
-  
+
   .menu1 {
     display: none;
   }

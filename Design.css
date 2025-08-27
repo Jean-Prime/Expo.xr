@@ -56,14 +56,11 @@ header {
 
 .titre svg {
   padding: 0 10px 0 10px;
-  }
+}
 
-
-  .ExpoContact li{
-   list-style: none; 
-
-
-  }
+.ExpoContact li {
+  list-style: none;
+}
 
 .menu1 ul {
   display: flex;
@@ -266,7 +263,6 @@ Debut Design En-tête */
   justify-content: space-between;
   align-items: center;
   margin: 10px 10px 5px 10px;
-
 }
 
 .btnContact {
@@ -450,16 +446,12 @@ PAGE       :      Accueil     //////////////////////////////
 
 Debut Design En-tête */
 
-
-
   .barrePrincipal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 5px 0 5px;
   }
-
- 
 
   .menu1 {
     display: none;
@@ -468,7 +460,7 @@ Debut Design En-tête */
   #Exposition {
     display: inline;
   }
-  
+
   .btnSecond {
     display: inline;
     margin: 0 10px 0 10px;
@@ -512,13 +504,13 @@ Debut Design Principal*/
     width: 96%;
     height: 100px;
   }
+
   /*Fin Design Principal
 
 
  
 
 */
-
 
   /*
 

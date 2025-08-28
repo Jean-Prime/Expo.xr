@@ -8,8 +8,8 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   scrollbar-width: none;
 }
@@ -45,6 +45,7 @@ header {
 #Exposition {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .titre {
@@ -60,6 +61,10 @@ header {
 
 .ExpoContact li {
   list-style: none;
+}
+
+.ExpoContact .btnContact {
+  margin: 7px 14px 0 0;
 }
 
 .menu1 ul {
@@ -149,7 +154,7 @@ header {
 
 Debut Design Principal*/
 .home {
-  margin: 15px 0px;
+  margin: 15px 0;
 
   text-align: center;
 }
@@ -419,7 +424,12 @@ Debut Design Principal*/
 
   .images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .images img {
+    width: 96%;
+    height: 170px;
   }
 
   /*Fin Design Principal
@@ -450,7 +460,15 @@ Debut Design En-tête */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5px 0 5px;
+    margin: 0 8px 0 5px;
+  }
+
+  .titre {
+    font-size: 25px;
+  }
+
+  .titre svg {
+    padding: 0 7px 0 10px;
   }
 
   .menu1 .btnContent {
@@ -461,15 +479,20 @@ Debut Design En-tête */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 0 10px 0;
+    margin: 20px 0 0 0;
   }
 
-.menu1 a{
-  padding: 5px;
-}
+  .menu1 a {
+    padding: 0 3px 0 3px;
+    font-size: 13px;
+  }
 
   #Exposition {
     display: inline;
+  }
+
+  .ExpoContact .btnContact {
+    margin: 0;
   }
 
   .btnSecond {
@@ -497,19 +520,29 @@ Debut Design En-tête */
 
 Debut Design Principal*/
 
+  header {
+    margin: 0 5px 10px 5px;
+  }
+
+  .home {
+    margin: 8px 0;
+  }
+
   .titreCenter {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 20px;
   }
 
   .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
+    margin: 30px 5px 0 5px;
   }
 
   .images img {
     width: 96%;
-    height: 100px;
+    height: 150px;
   }
 
   /*Fin Design Principal
@@ -547,6 +580,10 @@ Debut Design En-tête */
 
 Debut Design Principal */
 
+  .ExpoContact {
+    margin: 18px 10px 5px 10px;
+  }
+
   .email,
   .numWhatsApp {
     padding-left: 50px;
@@ -566,3 +603,33 @@ Debut Design Principal */
 }
 
 /* Fin Design Responsive */
+
+@media all and (max-width: 450px) {
+  /*
+
+
+
+PAGE       :      Accueil        //////////////////////////////
+
+
+
+*/
+
+/*
+
+
+
+Debut Design Principal*/
+
+  .images img {
+    width: 96%;
+    height: 100px;
+  }
+
+  /*Fin Design Principal
+
+
+
+
+*/
+}

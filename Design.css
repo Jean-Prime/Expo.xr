@@ -453,9 +453,20 @@ Debut Design En-tête */
     margin: 0 5px 0 5px;
   }
 
-  .menu1 {
+  .menu1 .btnContent {
     display: none;
   }
+
+  .menu1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 10px 0;
+  }
+
+.menu1 a{
+  padding: 5px;
+}
 
   #Exposition {
     display: inline;
@@ -471,10 +482,6 @@ Debut Design En-tête */
 
   .btnSecond:hover {
     color: var(--main-fourth-color);
-  }
-
-  .menu1 ul {
-    display: none;
   }
 
   /* Fin Design En-tête 
